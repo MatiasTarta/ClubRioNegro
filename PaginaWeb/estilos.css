@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
+
+*{margin: 0px;
+    padding: 0px;}
 body {
     font-family: sans-serif;
     margin: 0;
@@ -10,7 +13,7 @@ header {
     min-height: 70px;
     background-color: #3e5982;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .logo {
@@ -47,6 +50,42 @@ nav a:hover {
     color: white;
     background-color: #1da146;
     border-radius: 5px;
+}
+
+.slider-frame{
+    width: 1280;
+    height: auto;
+    margin: 50px auto0;
+    overflow: hidden;
+    animation:  slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+}
+
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
 }
 
 @media (max-width: 700px) {
