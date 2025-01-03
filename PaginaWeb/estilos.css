@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-*{margin: 0px;
-    padding: 0px;}
 body {
     font-family: sans-serif;
-    margin: 0;
 }
 
 header {
@@ -21,7 +20,6 @@ header {
     align-items: center;
     justify-content: center;
     margin-right: 25px;
-    
 }
 
 .logo img {
@@ -52,40 +50,64 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.slider-frame{
-    width: 1280;
-    height: auto;
-    margin: 50px auto0;
+/* Estilos del Slider */
+.slider-frame {
+    width: 100%;  /* Ahora usa un porcentaje del contenedor */
+    height: 800px;
+    margin: 0px auto;
     overflow: hidden;
-    animation:  slide 15s infinite alternate ease-in-out;
+    
 }
 
-.slider-frame ul{
+.slider-frame ul {
     display: flex;
-    padding: 0px;
-    width: 400%;
-}
-.slider-frame li{
+    padding: 0;
+    width: 400%;  /* Total de 4 imágenes */
     list-style: none;
-    width: 100%;
-}
-.slider-frame img{
-    width: 100%;
+    
 }
 
+.slider-frame li {
+    width: 100%;
+    
+}
 
-@keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
+.slider-frame img {
+    width: 100%;
+    
+}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+/* Animación del Slider */
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+}
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
+/* Aplicar la animación al slider */
+.slider-frame ul {
+    animation: slide 15s infinite alternate ease-in-out;
 }
 
 @media (max-width: 700px) {
@@ -93,6 +115,6 @@ nav a:hover {
         flex-direction: column;
     }
     nav {
-        padding: 10px 0px;
+        padding: 10px 0;
     }
 }
