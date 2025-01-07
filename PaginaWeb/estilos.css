@@ -146,11 +146,17 @@ nav a:hover {
     height: 75px;
 }
 .grid-container p {
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-    font-size: 16px;  /* Tamaño del texto */
-    color: #1da146;      /* Color del texto */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1da146;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+.descripcion{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bottom-folder{
