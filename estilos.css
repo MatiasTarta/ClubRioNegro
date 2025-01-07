@@ -107,10 +107,11 @@ nav a:hover {
     }
 }
 
-/* Aplicar la animación al slider */
 .slider-frame ul {
     animation: slide 15s infinite  ease-in-out;
 }
+
+
 
 .grid-container {
     position: relative;
@@ -153,15 +154,22 @@ nav a:hover {
     font-weight: 400;
 }
 
-.descripcion{
+.subtitulo{
+    color: red;
     margin-top: 20px;
-    font-size: 16px;
+    padding: 1%;
+}
+
+.descripcion{
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    padding: 2%;
+    
 }
 
 .bottom-folder{
     margin-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     background-color: #3e5982;
 }
 
