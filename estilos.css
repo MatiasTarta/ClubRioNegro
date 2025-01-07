@@ -14,7 +14,12 @@ header {
     align-items: center;
     width: 100%;
     position: fixed;
+
 }
+.spacer {
+    height: 80px;
+}
+
 
 .logo {
     display: flex;
@@ -52,14 +57,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Estilos del Slider */
 .slider-frame {
-    width: 100%; 
+    width: 100%;
     height: 80%;
     overflow: hidden;
-    padding-top: 20px;
-   
-    
 }
 
 .slider-frame ul {
