@@ -65,7 +65,7 @@ nav a:hover {
 .slider-frame ul {
     display: flex;
     padding: 0;
-    width: 400%;  /* Total de 4 imágenes */
+    width: 400%;
     list-style: none;
     
 }
@@ -79,7 +79,6 @@ nav a:hover {
     height: 100%;
 }
 
-/* Animación del Slider */
 @keyframes slide {
     0% {
         margin-left: 0%;
@@ -125,6 +124,8 @@ nav a:hover {
     border-radius: 10px;
     margin-left: 20%;
     margin-right: 20%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .grid-container > div {
