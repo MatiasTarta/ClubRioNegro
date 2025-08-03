@@ -8,16 +8,30 @@
         <title>Noticias - Club Rio Negro</title>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="Recursos/club rio negro logo.png" alt="Logo del Club">
+    <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Recursos/club rio negro logo.png" alt="Club Rio Negro" />
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Disciplinas</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Voley</a></li>
+                                <li><a href="#">Handball</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle" id="mobile-menu">&#9776;</div>
             </div>
-            <nav>
-                <a href="index.html" class="nav-link">Inicio</a>
-                <a href="noticias.html" class="nav-link">Noticias</a>
-                <a href="contactos.html" class="nav-link">Contacto</a>
-            </nav>
-        </header>
+    </header>
         <div class="spacer"></div>
         
 

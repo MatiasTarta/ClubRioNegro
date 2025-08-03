@@ -75,37 +75,66 @@ ul.dropdown li {
 
 
 
-
-
 .grilla-horarios {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Roboto', sans-serif;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grilla-horarios h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3e5982;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.grilla-horarios table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: transparent;
 }
 
 .grilla-horarios thead tr {
-    background-color: #6cc050;
-    color: white;
+  background-color: #6cc050;
+  color: white;
 }
 
 .grilla-horarios thead th {
-    padding: 15px 10px;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
+  padding: 15px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #fff; /* blanco para mejor contraste */
+  border: none;
 }
 
 .grilla-horarios tbody td {
-    padding: 15px 10px;
-    font-size: 16px;
-    text-align: center;
-    border: none; /* Sin bordes */
-    color: #000;
+  padding: 15px 10px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  color: #000;
+  background: transparent;
 }
 
 .grilla-horarios tbody tr:hover {
-    background-color: #b5b5bc; /* Opcional: para que al pasar el mouse se destaque la fila */
+  background-color: #b5b5bc;
 }
+
+.cancha {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
 
 .cancha {
   display: block;
