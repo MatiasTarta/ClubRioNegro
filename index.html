@@ -9,17 +9,31 @@
         <title>Club Rio Negro</title>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="Recursos/club rio negro logo.png" alt="Logo del Club">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Recursos/club rio negro logo.png" alt="Club Rio Negro" />
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Disciplinas</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Voley</a></li>
+                                <li><a href="#">Handball</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle" id="mobile-menu">&#9776;</div>
             </div>
-            <nav>
-                <a href="index.html" class="nav-link">Inicio</a>
-                <a href="noticias.html" class="nav-link">Noticias</a>
-                <a href="contactos.html" class="nav-link">Contacto</a>
-            </nav>
-        </header>
-        <div class="spacer"></div>
+    </header>
+
         
         <div class="slider-frame">
             <ul>
@@ -30,16 +44,79 @@
                
             </ul>
         </div>
-        <div class="grid-container">
-            <div><img src="Recursos/pelota voley.png" alt=""><p>Voley</p></div>
-            <div><img src="Recursos/pelota handball.png" alt=""><p>Handball</p></div>
-            <div>
-                <a href="https://www.instagram.com/club_rio_negro/" target="_blank">
-                    <img src="Recursos/logo instagram.png" alt="Instagram Logo">
-                </a>
-                <p>Nosotros</p>
+        <section class="tarjetas-animadas">
+            <div class="tarjeta">
+                <div class="tarjeta-bg" style="background-image: url('Recursos/foto1.jpg');"></div>
+                <div class="tarjeta-contenido">
+                <h2>Voley</h2>
+                <a class="boton" href="#">Más Info</a>
+                </div>
             </div>
-        </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-bg" style="background-image: url('Recursos/foto2.jpg');"></div>
+                <div class="tarjeta-contenido">
+                <h2>Handball</h2>
+                <a class="boton" href="#">Más Info</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-bg" style="background-image: url('Recursos/foto3.jpg');"></div>
+                <div class="tarjeta-contenido">
+                <h2>Ustedes</h2>
+                <a class="boton" href="#">Más Info</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="grilla-horarios">
+        <h2>Horarios Vóley</h2>
+        <table class="tabla-horarios">
+            <thead>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>20:00</td>
+                <td>
+                Sub 18 Femenino<br>Sub 19 Fem / Mayores<br><span class="cancha">Cancha 133</span>
+                </td>
+                <td></td>
+                <td>
+                Sub 18 Femenino<br>Sub 19 Fem / Mayores<br><span class="cancha">Cancha 133</span>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>21:30</td>
+                <td>
+                Sub 18 Masculino<br>Primera Femenino<br><span class="cancha">Cancha 133</span>
+                </td>
+                <td>
+                Primera Masculino<br><span class="cancha">CET 3</span>
+                </td>
+                <td>
+                Sub 18 Masculino<br>Primera Femenino<br><span class="cancha">Cancha 133</span>
+                </td>
+                <td>
+                Primera Masculino<br><span class="cancha">CET 3</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+
+
+
+
         <h2 class="subtitulo">Sobre Club Rio Negro</h2>
         <p class="descripcion">
             Club Río Negro | Voley y Handball<br>
@@ -48,6 +125,16 @@
             •Dedicación, trabajo en equipo y excelencia deportiva<br>
             🌟 ¡Unite a nuestra familia deportiva!</p>
             <div class="bottom-folder"></div>
-    </body>
+            
+        </body>
+    <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
 </html>
  
