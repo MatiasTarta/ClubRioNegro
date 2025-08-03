@@ -209,6 +209,126 @@ ul.dropdown li {
     height: 100%;
 }
 
+
+.elementor-widget-wrap {
+  text-align: center;
+  padding-top: 30px; /* aire fresco arriba */
+}
+
+.elementor-heading-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  color: #333;
+}
+
+.elementor-widget-divider {
+  margin: 20px auto;
+}
+
+.elementor-divider-separator i {
+  font-size: 24px;
+  color: #000;
+}
+
+
+/* bottom*/
+.bottom-folder {
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1 1 22%;
+  min-width: 220px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fffdd6; /* color dorado claro */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6cc050;
+}
+
+i.far.fa-dot-circle {
+  margin-right: 10px;
+  color: #6cc050;
+  min-width: 18px;
+  text-align: center;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #6cc050;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+p a {
+  color: #fffdd6; /* color dorado claro */
+  font-weight: 600;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .container {
+    justify-content: center;
+  }
+}
+
+}
+
+
+
 @keyframes slide {
     0%, 20% {
         margin-left: 0%;
